@@ -1,29 +1,22 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { Product } from './components/Product';
-import { products } from './data/products';
+import { IProduct } from './models';
+import axios from 'axios';
 
 function App() {
-  // function fetchData():void {
-  //   const request: any = fetch('https://fakestoreapi.com/products');
-  //   request
-  //         .then((response: any) => {
-  //         if(!response.ok) {
-  //           throw new Error(`Error ${response.status}`)
-  //         } else {
-  //           return response.json()
-  //         }
-  //       })
-  //         .then((data: any[]) => {
-  //           data.map(obj => {
-              
-  //           })
-  //         })
-  //   console.log(request)
-  // }
-  // fetchData()
+  const [products, setProducts] = useState<IProduct[]>([]);
+
+  async function fetchProducts() {
+    const response = await axios.get<IProduct[]>('https://fakestoreapi.com/products');
+    setProducts(response.data)
+  }
+
+  useEffect(() => {
+    fetchProducts()
+  }, [])
   return (
     <div className='container mx-auto max-w-2xl pt-5'>
-      <Product product={products[0]}/>
+      {products.map(product => <Product product={product} key={product.id}/>)}
     </div>
   );
 }
