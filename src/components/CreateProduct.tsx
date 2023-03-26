@@ -1,14 +1,45 @@
-import { text } from "stream/consumers";
+import axios from "axios";
 import { useState } from "react";
+import { IProduct } from "../models";
+import { ErrorMessage } from "./Error";
 
-export function CreateProduct() {
-    const [value, setValue] = useState('')
-
-    const submitHandler = (event: React.FormEvent) => {
-        event.preventDefault()
+const ProductDataExample: IProduct = {
+    title: '',
+    price: 13.5,
+    description: 'lorem ipsum set',
+    image: 'https://i.pravatar.cc',
+    category: 'electronic',
+    rating:{
+        rate: 4,
+        count: 123
     }
-    const changeHandler = (event: React.ChangeEvent<HTMLInputElement>) => {
-        setValue(event.target.value) 
+}
+
+interface CreateProductProps {
+    onCreate: () => void
+}
+
+export function CreateProduct({onCreate}: CreateProductProps) {
+    const [value, setValue] = useState('');
+    const [error, setError] = useState('')
+
+    const submitHandler = async(event: React.FormEvent) => {
+        event.preventDefault()
+        setError('')
+
+        if(value.trim().length === 0) {
+            setError('Please Enter valid title')
+            return
+        }
+
+        ProductDataExample.title = value
+        const response = await axios.post<IProduct>('https://fakestoreapi.com/products', ProductDataExample)
+
+        onCreate()
+    }
+
+    const changeHandler =  (event: React.ChangeEvent<HTMLInputElement>) => {
+        setValue(event.target.value)
     }
 
     return(
@@ -22,9 +53,10 @@ export function CreateProduct() {
                 value={value}
                 onChange={changeHandler}
             />
+            {error && <ErrorMessage error={error}/>}
             <button
                 type="submit"
-                className="py-2 px-4 border rounded bg-yellow-400 hover:text-slate-100"
+                className="py-2 px-4 border border-black rounded bg-yellow-400 hover:text-slate-100"
             >
                 Submit
             </button>
