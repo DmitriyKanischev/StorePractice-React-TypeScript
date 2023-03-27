@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/StorePractice-React-TypeScript/static/css/main.a28bacfe.css",
+    "main.js": "/StorePractice-React-TypeScript/static/js/main.1b5c6f05.js",
+    "index.html": "/StorePractice-React-TypeScript/index.html",
+    "main.a28bacfe.css.map": "/StorePractice-React-TypeScript/static/css/main.a28bacfe.css.map",
+    "main.1b5c6f05.js.map": "/StorePractice-React-TypeScript/static/js/main.1b5c6f05.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a28bacfe.css",
+    "static/js/main.1b5c6f05.js"
+  ]
+}
