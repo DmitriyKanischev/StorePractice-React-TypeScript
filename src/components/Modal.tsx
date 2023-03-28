@@ -1,4 +1,3 @@
-import { title } from "process"
 
 interface ModalProps {
     children: React.ReactNode,

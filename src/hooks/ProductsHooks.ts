@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from 'react';
-import { Product } from '../components/Product';
 import { IProduct } from '../models';
 import axios, { AxiosError } from 'axios';
 
