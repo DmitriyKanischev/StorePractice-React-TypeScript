@@ -4,6 +4,7 @@ import './index.css';
 import App from './App';
 import { ModalState } from './context/ModalContext';
 import { BrowserRouter } from 'react-router-dom';
+import { Home } from './components/Home';
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
@@ -11,7 +12,8 @@ const root = ReactDOM.createRoot(
 root.render(
   <BrowserRouter>
     <ModalState>
-      <App />
+      {/* <App /> */}
+      <Home/>
     </ModalState>
   </BrowserRouter>
 );
