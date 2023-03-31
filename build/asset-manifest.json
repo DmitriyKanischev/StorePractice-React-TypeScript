@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.css": "/static/css/main.d9a1630e.css",
-    "main.js": "/static/js/main.4bfbd664.js",
-    "index.html": "/index.html",
-    "main.d9a1630e.css.map": "/static/css/main.d9a1630e.css.map",
-    "main.4bfbd664.js.map": "/static/js/main.4bfbd664.js.map"
+    "main.css": "/StorePractice-React-TypeScript/static/css/main.d9a1630e.css",
+    "main.js": "/StorePractice-React-TypeScript/static/js/main.4bfbd664.js",
+    "index.html": "/StorePractice-React-TypeScript/index.html",
+    "main.d9a1630e.css.map": "/StorePractice-React-TypeScript/static/css/main.d9a1630e.css.map",
+    "main.4bfbd664.js.map": "/StorePractice-React-TypeScript/static/js/main.4bfbd664.js.map"
   },
   "entrypoints": [
     "static/css/main.d9a1630e.css",
