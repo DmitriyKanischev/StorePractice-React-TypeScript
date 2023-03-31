@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 
 export function Home() {
@@ -23,11 +24,14 @@ export function Home() {
                             className="text-yellow-400 font-bold text-7xl text-right my-1 mx-8 drop-shadow-md"
                         > pay less
                         </h1>
+                        <Link to="/products">
                         <button
                             className="py-4 px-5 border my-40 mx-[40%] hover:text-slate-100 bg-yellow-400 rounded"
                         >
                             Start shopping!
                         </button>
+                        
+                        </Link>
                          
                 </div>
         </div>

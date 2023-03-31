@@ -12,8 +12,7 @@ const root = ReactDOM.createRoot(
 root.render(
   <BrowserRouter>
     <ModalState>
-      {/* <App /> */}
-      <Home/>
+      <App/>
     </ModalState>
   </BrowserRouter>
 );
