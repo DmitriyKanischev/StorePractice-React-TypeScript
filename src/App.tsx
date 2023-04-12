@@ -7,6 +7,7 @@ function App() {
     <Routes>
       <Route path='/' element={<Home/>}/>
       <Route path='/products' element={<ProductsPages/>}/>
+      <Route path='*' element={<div>Not found</div>}/>
     </Routes>
   )
 }
