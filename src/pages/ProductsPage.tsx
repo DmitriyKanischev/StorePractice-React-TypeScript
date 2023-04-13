@@ -7,6 +7,7 @@ import { CreateProduct } from '../components/CreateProduct';
 import { IProduct } from '../models';
 import { ModalContext } from '../context/ModalContext';
 import { useContext } from 'react';
+import { Navigation } from '../components/Navigation';
 
 
 export function ProductsPages() {
@@ -20,6 +21,7 @@ export function ProductsPages() {
   
     return (
       <>
+        <Navigation/>
         <div className='container mx-auto max-w-6xl flex flex-wrap pt-5'>
             { loading && <Loader/> }
             { error && <ErrorMessage error={error} />}
