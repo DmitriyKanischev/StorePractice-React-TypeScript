@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/StorePractice-React-TypeScript/static/css/main.d9a1630e.css",
-    "main.js": "/StorePractice-React-TypeScript/static/js/main.64d5f8d4.js",
+    "main.css": "/StorePractice-React-TypeScript/static/css/main.db248ab0.css",
+    "main.js": "/StorePractice-React-TypeScript/static/js/main.f4fa8987.js",
     "index.html": "/StorePractice-React-TypeScript/index.html",
-    "main.d9a1630e.css.map": "/StorePractice-React-TypeScript/static/css/main.d9a1630e.css.map",
-    "main.64d5f8d4.js.map": "/StorePractice-React-TypeScript/static/js/main.64d5f8d4.js.map"
+    "main.db248ab0.css.map": "/StorePractice-React-TypeScript/static/css/main.db248ab0.css.map",
+    "main.f4fa8987.js.map": "/StorePractice-React-TypeScript/static/js/main.f4fa8987.js.map"
   },
   "entrypoints": [
-    "static/css/main.d9a1630e.css",
-    "static/js/main.64d5f8d4.js"
+    "static/css/main.db248ab0.css",
+    "static/js/main.f4fa8987.js"
   ]
 }
