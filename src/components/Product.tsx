@@ -22,7 +22,12 @@ export function Product({product}: ProductProps) {
 
             <p>{product.title}</p>
 
-            <p className="font-bold">{product.price}</p>
+            <p className="font-bold">{
+                new Intl.NumberFormat('en-US', {
+                    style: 'currency', currency: 'USD',
+                    currencyDisplay: 'narrowSymbol'
+                }).format(product.price)}
+            </p>
 
             <button
                 className={btnClasses.join(' ')}
