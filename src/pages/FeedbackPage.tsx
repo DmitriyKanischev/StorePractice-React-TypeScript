@@ -9,7 +9,7 @@ export function FeedbackPage() {
     
     return(
         <>
-            <h1 className="font-bold text-5xl text-center text-blue-400">Feedback from buyers:</h1>
+            <h1 className="font-bold mb-4 text-5xl text-center text-cyan-500">Feedback from buyers:</h1>
             <div className='container mx-auto max-w-5xl flex flex-col pt-5'>
                 { loading && <Loader/> }
                 { error && <ErrorMessage error={error}/>}
