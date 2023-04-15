@@ -24,7 +24,7 @@ export function Home() {
                 </h1>
                 <Link to="/products">
                     <button
-                        className="py-4 px-5 border mt-[40%] ml-[50%] mr-[-50%] hover:text-slate-100 bg-yellow-400 rounded"
+                        className="py-4 px-5 border mt-[40%] hover:text-slate-100 bg-yellow-400 rounded"
                     >
                         Start shopping!
                     </button>
